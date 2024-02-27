@@ -53,4 +53,8 @@ def guess_ship(board):
 
             elif(board[guess_row][guess_col] == "X"):
                 print("You guessed that already")
+        
+            else:
+                print("That's a miss!")
+                board[guess_row][guess_col] = "X"
 
