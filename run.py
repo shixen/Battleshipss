@@ -57,4 +57,14 @@ def guess_ship(board):
             else:
                 print("That's a miss!")
                 board[guess_row][guess_col] = "X"
+                            # ask player to play again when turns are out
+            if turn == 9:
+                    play_again = input("Game over. play again ? y/n: ")
+                    if play_again == "y":
+                        main()
+                        break
+                        
+                        
+                        
+            print_board(board)
 
