@@ -47,3 +47,10 @@ def guess_ship(board):
             board[guess_row][guess_col] = "@"
             print_board(board)
             break   
+        else:
+            if (guess_row not in range(5) or guess_col not in range(5)):
+                print("you must guess between 0-4")
+
+            elif(board[guess_row][guess_col] == "X"):
+                print("You guessed that already")
+
