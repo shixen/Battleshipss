@@ -17,3 +17,12 @@ def random_row(board):
    
 def random_col(board):
      return randint(0, len(board) - 1)
+
+
+ship_row = random_row(board)
+ship_col = random_col(board)
+
+# ask for username and display rules for game
+username = input("please enter your name: ")
+print(f"hello {username} welcome to a game of battleships!")
+print("There is a hidden ship on the board and your job is to guess a number between 0-4 untill you hit with 10 attempts!")
