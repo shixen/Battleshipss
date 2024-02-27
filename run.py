@@ -68,3 +68,14 @@ def guess_ship(board):
                         
             print_board(board)
 
+
+# main function to print game
+def main():
+    print_board(board)
+    random_row(board)
+    random_col(board)
+    guess_ship(board)
+
+
+
+main()
